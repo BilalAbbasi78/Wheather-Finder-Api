@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>WHEATHER FINDER API</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <h1>Weather App</h1>
+                <div class="wheather-search">
+                    <input type="text" id="cityInput" placeholder="Enter city name">
+                    <button id="getWeatherBtn" onClick="getWeather()">Search</button>
+                    
+                </div>
+                <div id="cursur"></div>
+            </div>
+
+            <div class="back">
+                <div class="weather-icon">☀️</div>
+                <div class="temp" id="temp">25°C</div>
+                <div class="city" id="city">karachi</div>
+                <div class="condition" id="condition">Sunny</div>
+                <div class="details">
+                    <div>
+                        <h3 id="humidity">65%</h3>
+                        <p>Humidity</p>
+                        <button class="flipCard" onClick="flipCard()">Flip Card</button>
+                    </div>
+
+
+                </div>
+                <div id="weatherResult"></div>
+            </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
